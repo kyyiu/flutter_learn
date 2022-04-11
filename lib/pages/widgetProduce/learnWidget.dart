@@ -11,8 +11,10 @@ class LearnWidgetful extends StatefulWidget {
 }
 
 class _LearnWidgetfulState extends State<LearnWidgetful> {
+  final thisKey = GlobalKey<_TestGlobalKeyState>();
 
   int _counter = 0;
+  static String str = 'ahhs';
 
   @override
   void initState() {
@@ -63,6 +65,10 @@ class _LearnWidgetfulState extends State<LearnWidgetful> {
     print('dispose');
   }
 
+  Widget Sub() {
+    return Text( 'aa');
+  }
+
   @override
   Widget build(BuildContext context) {
     /**
@@ -80,15 +86,35 @@ class _LearnWidgetfulState extends State<LearnWidgetful> {
       ),
       body: Column(
         children: [
-          Text('当前counter$_counter')
+          Text('当前counter$_counter'),
+          Sub(),
+          TestGlobalKey(key: thisKey,)
         ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
+          print(thisKey.currentState?.str);
           setState(() => _counter++);
         },
         child: const Icon(Icons.add),
       ),
+    );
+  }
+}
+
+class TestGlobalKey extends StatefulWidget {
+  const TestGlobalKey({ Key? key }) : super(key: key);
+
+  @override
+  State<TestGlobalKey> createState() => _TestGlobalKeyState();
+}
+
+class _TestGlobalKeyState extends State<TestGlobalKey> {
+  final String str = 'gge';
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Text('testkkk'),
     );
   }
 }
