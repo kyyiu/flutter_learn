@@ -1,7 +1,4 @@
 
-
-import 'dart:js';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/main.dart';
@@ -11,12 +8,17 @@ import 'package:flutter_application_1/pages/widgetProduce/learnWidget.dart';
 class MyRoute {
   static Map<String, Function> routes = {
     '/': (context, {arguments}) => MyHomePage(title: 'aa'),
-    '/w': (context, {arguments}) => LearnWidgetful(),
+    '/lifeCircle': (context, {arguments}) => LearnWidgetful(),
   };
 
   static List<String> routeName = [
     '/',
-    '/w'
+    '/lifeCircle'
+  ];
+
+  static List<String> chineseRouteName = [
+    '首页（点击无事发生）',
+    'widget学习-state生命周期'
   ];
 } 
 

@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: '目录'),
     );
   }
 }
@@ -42,10 +42,16 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   buildItem(int idx) {
-    print(idx);
     return TextButton(onPressed: (){
+      if (idx == 0) return;
       Navigator.pushNamed(context, MyRoute.routeName[idx]);
-    }, child: Text(idx.toString()));
+    }, child: Text(
+      MyRoute.chineseRouteName[idx],
+      style: TextStyle(
+        fontSize: 20.0,
+        decoration: TextDecoration.none
+      ),
+    ));
   }
 
   @override
