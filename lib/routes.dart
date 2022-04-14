@@ -8,7 +8,7 @@ import 'package:flutter_application_1/pages/widgetProduce/learnWidget.dart';
 class MyRoute {
   static Map<String, Function> routes = {
     '/': (context, {arguments}) => MyHomePage(title: 'aa'),
-    '/lifeCircle': (context, {arguments}) => LearnWidgetful(),
+    '/lifeCircle': (context, {arguments}) => LearnWidgetful(initValue: arguments["initVal"],),
   };
 
   static List<String> routeName = [

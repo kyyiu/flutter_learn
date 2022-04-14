@@ -44,7 +44,9 @@ class _MyHomePageState extends State<MyHomePage> {
   buildItem(int idx) {
     return TextButton(onPressed: (){
       if (idx == 0) return;
-      Navigator.pushNamed(context, MyRoute.routeName[idx]);
+      Navigator.pushNamed(context, MyRoute.routeName[idx], arguments: {
+        "initVal": 9
+      });
     }, child: Text(
       MyRoute.chineseRouteName[idx],
       style: TextStyle(
