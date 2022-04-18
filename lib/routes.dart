@@ -1,24 +1,31 @@
 
+import 'dart:js';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/main.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learnWidget.dart';
+
+import 'pages/widgetProduce/learnButton.dart';
 
 
 class MyRoute {
   static Map<String, Function> routes = {
     '/': (context, {arguments}) => MyHomePage(title: 'aa'),
     '/lifeCircle': (context, {arguments}) => LearnWidgetful(initValue: arguments["initVal"],),
+    '/button': (context, {arguments}) => LearnButton(),
   };
 
   static List<String> routeName = [
     '/',
-    '/lifeCircle'
+    '/lifeCircle',
+    '/button'
   ];
 
   static List<String> chineseRouteName = [
     '首页（点击无事发生）',
-    'widget学习-state生命周期'
+    'widget学习-state生命周期',
+    '按钮'
   ];
 } 
 
