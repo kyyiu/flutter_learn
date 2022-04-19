@@ -4,6 +4,7 @@ import 'dart:js';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/main.dart';
+import 'package:flutter_application_1/pages/widgetProduce/learnCheckBox.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learnWidget.dart';
 
 import 'pages/widgetProduce/learnButton.dart';
@@ -14,18 +15,21 @@ class MyRoute {
     '/': (context, {arguments}) => MyHomePage(title: 'aa'),
     '/lifeCircle': (context, {arguments}) => LearnWidgetful(initValue: arguments["initVal"],),
     '/button': (context, {arguments}) => LearnButton(),
+    '/checkBox': (context, {arguments}) => LearnCheckBox()
   };
 
   static List<String> routeName = [
     '/',
     '/lifeCircle',
-    '/button'
+    '/button',
+    '/checkBox'
   ];
 
   static List<String> chineseRouteName = [
     '首页（点击无事发生）',
     'widget学习-state生命周期',
-    '按钮'
+    '按钮',
+    '开关和复选框'
   ];
 } 
 
