@@ -12,6 +12,10 @@ class _LearnFormState extends State<LearnForm> {
   TextEditingController _nameController = TextEditingController();
   TextEditingController _passController = TextEditingController();
 
+  TextEditingController _formNameController = TextEditingController();
+  TextEditingController _formPassController = TextEditingController();
+  GlobalKey _formKey = GlobalKey<FormState>();
+
   FocusNode fn1 = FocusNode();
   FocusNode fn2 = FocusNode();
   FocusScopeNode? focusScopeNode;
@@ -91,7 +95,57 @@ class _LearnFormState extends State<LearnForm> {
                 fn2.unfocus();
               },child: Text('隐藏键盘')),
           ],);
-        })
+        }),
+        Container(
+          height: 10,
+          decoration: BoxDecoration(color: Colors.brown),
+        ),
+        Form(
+          key: _formKey,
+          autovalidateMode: AutovalidateMode.onUserInteraction,
+          child: Column(children: [
+            TextFormField(
+              controller: _formNameController,
+              decoration: InputDecoration(
+                labelText: '表单用户名',
+                hintText: '表单用户名或邮箱',
+                icon: Icon(Icons.person)
+              ),
+              validator: (val) {
+                return val!.trim().isEmpty ? null : '用户名不能为空';
+              },
+            ),
+            TextFormField(
+              controller: _formPassController,
+              decoration: InputDecoration(
+                labelText: "表单密码",
+                hintText: "表单密码",
+                icon: Icon(Icons.lock)
+              ),
+              obscureText: true,
+              validator: (val) {
+                return val!.trim().length > 5 ? null : "密码不能少于6位";
+              },
+            ),
+            Padding(padding: EdgeInsets.only(top: 28),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: () {
+                          // 通过_formkey.currentState 获取Formstate
+                          // 调用validate（）方法校验用户名密码是否合法，校验
+                          // 通过后再提交数据
+                          if ((_formKey.currentState as FormState).validate()) {
+                            // 验证通过提交数据
+                          }
+                        },
+                        child: Padding(padding: EdgeInsets.all(16),child: Text("登录"),),))
+                  ],
+                )
+              ),
+          ],),
+        )
       ],),
     );
   }
