@@ -5,6 +5,7 @@ import 'package:flutter_application_1/pages/widgetProduce/learnAnima.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learnCheckBox.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learnForm.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learnWidget.dart';
+import 'package:flutter_application_1/pages/widgetProduce/learn_clip.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_transfrom.dart';
 
 import 'pages/widgetProduce/learnButton.dart';
@@ -18,7 +19,8 @@ class MyRoute {
     '/checkBox': (context, {arguments}) => LearnCheckBox(),
     '/form': (context, {arguments}) => LearnForm(),
     '/animation': (context, {arguments}) => LearnAnima(),
-    '/transfrom': (context, {arguments}) => LearnTransform()
+    '/transfrom': (context, {arguments}) => LearnTransform(),
+    '/clip': (context, {arguments}) => LearnClip()
   };
 
   static List<String> routeName = [
@@ -28,7 +30,8 @@ class MyRoute {
     '/checkBox',
     '/form',
     '/animation',
-    '/transfrom'
+    '/transfrom',
+    '/clip'
   ];
 
   static List<String> chineseRouteName = [
@@ -38,7 +41,8 @@ class MyRoute {
     '开关和复选框',
     '表单',
     '动画',
-    '变换'
+    '变换',
+    '裁剪'
   ];
 } 
 
