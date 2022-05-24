@@ -7,6 +7,7 @@ import 'package:flutter_application_1/pages/widgetProduce/learnForm.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learnWidget.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_clip.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_fitted_box.dart';
+import 'package:flutter_application_1/pages/widgetProduce/learn_scaffold.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_transfrom.dart';
 
 import 'pages/widgetProduce/learnButton.dart';
@@ -22,7 +23,8 @@ class MyRoute {
     '/animation': (context, {arguments}) => LearnAnima(),
     '/transfrom': (context, {arguments}) => LearnTransform(),
     '/clip': (context, {arguments}) => LearnClip(),
-    '/fittedBox': (context, {arguments}) => LearnFittedBox()
+    '/fittedBox': (context, {arguments}) => LearnFittedBox(),
+    '/scaffold': (context, {arguments}) => LearnScaffold()
   };
 
   static List<String> routeName = [
@@ -34,7 +36,8 @@ class MyRoute {
     '/animation',
     '/transfrom',
     '/clip',
-    '/fittedBox'
+    '/fittedBox',
+    '/scaffold'
   ];
 
   static List<String> chineseRouteName = [
@@ -46,7 +49,8 @@ class MyRoute {
     '动画',
     '变换',
     '裁剪',
-    'fittedBox'
+    'fittedBox',
+    'scaffold'
   ];
 } 
 
