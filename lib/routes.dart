@@ -9,6 +9,7 @@ import 'package:flutter_application_1/pages/widgetProduce/learn_clip.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_fitted_box.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_listview.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_scaffold.dart';
+import 'package:flutter_application_1/pages/widgetProduce/learn_scroll_controler.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_transfrom.dart';
 
 import 'pages/widgetProduce/learnButton.dart';
@@ -26,7 +27,8 @@ class MyRoute {
     '/clip': (context, {arguments}) => LearnClip(),
     '/fittedBox': (context, {arguments}) => LearnFittedBox(),
     '/scaffold': (context, {arguments}) => LearnScaffold(),
-    '/ListView_builder': (context, {arguments}) => LearListView()
+    '/ListView_builder': (context, {arguments}) => LearListView(),
+    '/scroll_controller': (context, {arguments}) => LearnScrollController()
   };
 
   static List<String> routeName = [
@@ -40,7 +42,8 @@ class MyRoute {
     '/clip',
     '/fittedBox',
     '/scaffold',
-    '/ListView_builder'
+    '/ListView_builder',
+    '/scroll_controller'
   ];
 
   static List<String> chineseRouteName = [
@@ -54,7 +57,8 @@ class MyRoute {
     '裁剪',
     'fittedBox',
     'scaffold',
-    'ListView_builder'
+    'ListView_builder',
+    '滚动监听和控制'
   ];
 } 
 
