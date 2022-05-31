@@ -7,6 +7,7 @@ import 'package:flutter_application_1/pages/widgetProduce/learnForm.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learnWidget.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_clip.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_fitted_box.dart';
+import 'package:flutter_application_1/pages/widgetProduce/learn_gridview.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_listview.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_scaffold.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_scroll_controler.dart';
@@ -16,6 +17,7 @@ import 'pages/widgetProduce/learnButton.dart';
 
 
 class MyRoute {
+  // 路由表
   static Map<String, Function> routes = {
     '/': (context, {arguments}) => MyHomePage(title: 'aa'),
     '/lifeCircle': (context, {arguments}) => LearnWidgetful(initValue: arguments["initVal"],),
@@ -28,9 +30,10 @@ class MyRoute {
     '/fittedBox': (context, {arguments}) => LearnFittedBox(),
     '/scaffold': (context, {arguments}) => LearnScaffold(),
     '/ListView_builder': (context, {arguments}) => LearListView(),
-    '/scroll_controller': (context, {arguments}) => LearnScrollController()
+    '/scroll_controller': (context, {arguments}) => LearnScrollController(),
+    '/grid': (context, {arguments}) => LearnGrid()
   };
-
+  // 路由名称
   static List<String> routeName = [
     '/',
     '/lifeCircle',
@@ -43,9 +46,10 @@ class MyRoute {
     '/fittedBox',
     '/scaffold',
     '/ListView_builder',
-    '/scroll_controller'
+    '/scroll_controller',
+    '/grid'
   ];
-
+  // 展示的入口
   static List<String> chineseRouteName = [
     '首页（点击无事发生）',
     'widget学习-state生命周期',
@@ -58,7 +62,8 @@ class MyRoute {
     'fittedBox',
     'scaffold',
     'ListView_builder',
-    '滚动监听和控制'
+    '滚动监听和控制',
+    'grid布局'
   ];
 } 
 
