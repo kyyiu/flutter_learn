@@ -6,6 +6,7 @@ import 'package:flutter_application_1/pages/widgetProduce/learnCheckBox.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learnForm.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learnWidget.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_clip.dart';
+import 'package:flutter_application_1/pages/widgetProduce/learn_customscrollview_slivers.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_fitted_box.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_gridview.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_listview.dart';
@@ -36,6 +37,7 @@ class MyRoute {
     '/grid': (context, {arguments}) => LearnGrid(),
     '/pageView': (context, {arguments}) => LearnPageView(),
     '/tabView': (context, {arguments}) => LearnTabView(),
+    '/CustomScrollView_Slivers': (context, {arguments}) => LearnCustomerScrollView()
   };
   // 路由名称
   static List<String> routeName = [
@@ -53,7 +55,8 @@ class MyRoute {
     '/scroll_controller',
     '/grid',
     '/pageView',
-    '/tabView'
+    '/tabView',
+    '/CustomScrollView_Slivers'
   ];
   // 展示的入口
   static List<String> chineseRouteName = [
@@ -71,7 +74,8 @@ class MyRoute {
     '滚动监听和控制',
     'grid布局',
     'pageView',
-    'tabView'
+    'tabView',
+    'CustomScrollView 和 Slivers'
   ];
 } 
 
