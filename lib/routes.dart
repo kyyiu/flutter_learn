@@ -12,6 +12,7 @@ import 'package:flutter_application_1/pages/widgetProduce/learn_fitted_box.dart'
 import 'package:flutter_application_1/pages/widgetProduce/learn_gridview.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_listview.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_pageview.dart';
+import 'package:flutter_application_1/pages/widgetProduce/learn_provider.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_scaffold.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_scroll_controler.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_tabview.dart';
@@ -41,7 +42,8 @@ class MyRoute {
     '/tabView': (context, {arguments}) => LearnTabView(),
     '/CustomScrollView_Slivers': (context, {arguments}) => LearnCustomerScrollView(),
     '/willpop': (context, {arguments}) => LearnWillPop(),
-    '/dataShare': (context, {arguments}) => LearnDataShare()
+    '/dataShare': (context, {arguments}) => LearnDataShare(),
+    '/provider': (context, {arguments}) => Learn_Provider()
   };
   // 路由名称
   static List<String> routeName = [
@@ -62,7 +64,8 @@ class MyRoute {
     '/tabView',
     '/CustomScrollView_Slivers',
     '/willpop',
-    '/dataShare'
+    '/dataShare',
+    '/provider'
   ];
   // 展示的入口
   static List<String> chineseRouteName = [
@@ -83,7 +86,8 @@ class MyRoute {
     'tabView',
     'CustomScrollView 和 Slivers',
     '导航返回拦截',
-    '数据共享'
+    '数据共享',
+    'provider'
   ];
 } 
 
