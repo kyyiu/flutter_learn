@@ -9,6 +9,7 @@ import 'package:flutter_application_1/pages/widgetProduce/learn_clip.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_fitted_box.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_gridview.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_listview.dart';
+import 'package:flutter_application_1/pages/widgetProduce/learn_pageview.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_scaffold.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_scroll_controler.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_transfrom.dart';
@@ -31,7 +32,8 @@ class MyRoute {
     '/scaffold': (context, {arguments}) => LearnScaffold(),
     '/ListView_builder': (context, {arguments}) => LearListView(),
     '/scroll_controller': (context, {arguments}) => LearnScrollController(),
-    '/grid': (context, {arguments}) => LearnGrid()
+    '/grid': (context, {arguments}) => LearnGrid(),
+    '/pageView': (context, {arguments}) => LearnPageView()
   };
   // 路由名称
   static List<String> routeName = [
@@ -47,7 +49,8 @@ class MyRoute {
     '/scaffold',
     '/ListView_builder',
     '/scroll_controller',
-    '/grid'
+    '/grid',
+    '/pageView'
   ];
   // 展示的入口
   static List<String> chineseRouteName = [
@@ -63,7 +66,8 @@ class MyRoute {
     'scaffold',
     'ListView_builder',
     '滚动监听和控制',
-    'grid布局'
+    'grid布局',
+    'pageView'
   ];
 } 
 
