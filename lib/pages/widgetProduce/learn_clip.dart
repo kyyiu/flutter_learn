@@ -30,7 +30,7 @@ class LearnClip extends StatelessWidget {
                 widthFactor: .5, // 宽度设置为原来宽度的一半, 另一半会溢出
                 child: avatar,
               ),
-              Text('Hello World', style: TextStyle(color: Colors.green),)
+              const Text('Hello World', style: TextStyle(color: Colors.green),)
             ],
           ),
           Row(
@@ -43,11 +43,11 @@ class LearnClip extends StatelessWidget {
                   child: avatar,
                 ),
               ),
-              Text('Hello World', style: TextStyle(color: Colors.green),)
+              const Text('Hello World', style: TextStyle(color: Colors.green),)
             ],
           ),
           DecoratedBox(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.amber
             ),
             child: ClipRect(
