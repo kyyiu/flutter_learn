@@ -9,6 +9,7 @@ import 'package:flutter_application_1/pages/widgetProduce/learn_clip.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_customscrollview_slivers.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_datasahre.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_fitted_box.dart';
+import 'package:flutter_application_1/pages/widgetProduce/learn_future_builder.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_gridview.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_listview.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_pageview.dart';
@@ -43,7 +44,8 @@ class MyRoute {
     '/CustomScrollView_Slivers': (context, {arguments}) => LearnCustomerScrollView(),
     '/willpop': (context, {arguments}) => LearnWillPop(),
     '/dataShare': (context, {arguments}) => LearnDataShare(),
-    '/provider': (context, {arguments}) => Learn_Provider()
+    '/provider': (context, {arguments}) => Learn_Provider(),
+    '/future_builder': (context, {arguments}) => LearnFutureBuilder()
   };
   // 路由名称
   static List<String> routeName = [
@@ -65,7 +67,8 @@ class MyRoute {
     '/CustomScrollView_Slivers',
     '/willpop',
     '/dataShare',
-    '/provider'
+    '/provider',
+    '/future_builder'
   ];
   // 展示的入口
   static List<String> chineseRouteName = [
@@ -87,7 +90,8 @@ class MyRoute {
     'CustomScrollView 和 Slivers',
     '导航返回拦截',
     '数据共享',
-    'provider'
+    'provider',
+    '异步ui更新'
   ];
 } 
 
