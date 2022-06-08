@@ -11,6 +11,7 @@ import 'package:flutter_application_1/pages/widgetProduce/learn_datasahre.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_fitted_box.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_future_builder.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_gridview.dart';
+import 'package:flutter_application_1/pages/widgetProduce/learn_listener.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_listview.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_pageview.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_provider.dart';
@@ -45,7 +46,8 @@ class MyRoute {
     '/willpop': (context, {arguments}) => LearnWillPop(),
     '/dataShare': (context, {arguments}) => LearnDataShare(),
     '/provider': (context, {arguments}) => Learn_Provider(),
-    '/future_builder': (context, {arguments}) => LearnFutureBuilder()
+    '/future_builder': (context, {arguments}) => LearnFutureBuilder(),
+    '/listener': (context, {arguments}) => LearnListener()
   };
   // 路由名称
   static List<String> routeName = [
@@ -68,7 +70,8 @@ class MyRoute {
     '/willpop',
     '/dataShare',
     '/provider',
-    '/future_builder'
+    '/future_builder',
+    '/listener'
   ];
   // 展示的入口
   static List<String> chineseRouteName = [
@@ -91,7 +94,8 @@ class MyRoute {
     '导航返回拦截',
     '数据共享',
     'provider',
-    '异步ui更新'
+    '异步ui更新',
+    '原始指针事件'
   ];
 } 
 
