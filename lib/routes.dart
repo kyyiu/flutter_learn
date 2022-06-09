@@ -15,6 +15,7 @@ import 'package:flutter_application_1/pages/widgetProduce/learn_listener.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_listview.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_pageview.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_provider.dart';
+import 'package:flutter_application_1/pages/widgetProduce/learn_request.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_scaffold.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_scroll_controler.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_tabview.dart';
@@ -47,7 +48,8 @@ class MyRoute {
     '/dataShare': (context, {arguments}) => LearnDataShare(),
     '/provider': (context, {arguments}) => Learn_Provider(),
     '/future_builder': (context, {arguments}) => LearnFutureBuilder(),
-    '/listener': (context, {arguments}) => LearnListener()
+    '/listener': (context, {arguments}) => LearnListener(),
+    '/request': (context, {arguments}) => LearnRequest()
   };
   // 路由名称
   static List<String> routeName = [
@@ -71,7 +73,8 @@ class MyRoute {
     '/dataShare',
     '/provider',
     '/future_builder',
-    '/listener'
+    '/listener',
+    '/request'
   ];
   // 展示的入口
   static List<String> chineseRouteName = [
@@ -95,7 +98,8 @@ class MyRoute {
     '数据共享',
     'provider',
     '异步ui更新',
-    '原始指针事件'
+    '原始指针事件',
+    '请求功能'
   ];
 } 
 
