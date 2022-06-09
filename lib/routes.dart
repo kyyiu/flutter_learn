@@ -14,6 +14,7 @@ import 'package:flutter_application_1/pages/widgetProduce/learn_gridview.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_listener.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_listview.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_pageview.dart';
+import 'package:flutter_application_1/pages/widgetProduce/learn_principle.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_provider.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_request.dart';
 import 'package:flutter_application_1/pages/widgetProduce/learn_scaffold.dart';
@@ -49,7 +50,8 @@ class MyRoute {
     '/provider': (context, {arguments}) => Learn_Provider(),
     '/future_builder': (context, {arguments}) => LearnFutureBuilder(),
     '/listener': (context, {arguments}) => LearnListener(),
-    '/request': (context, {arguments}) => LearnRequest()
+    '/request': (context, {arguments}) => LearnRequest(),
+    '/principle': (context, {arguments}) => Learn_Principle()
   };
   // 路由名称
   static List<String> routeName = [
@@ -74,7 +76,8 @@ class MyRoute {
     '/provider',
     '/future_builder',
     '/listener',
-    '/request'
+    '/request',
+    '/principle'
   ];
   // 展示的入口
   static List<String> chineseRouteName = [
@@ -99,7 +102,8 @@ class MyRoute {
     'provider',
     '异步ui更新',
     '原始指针事件',
-    '请求功能'
+    '请求功能',
+    '原理'
   ];
 } 
 
